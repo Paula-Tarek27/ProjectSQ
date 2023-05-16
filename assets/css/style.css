@@ -933,7 +933,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(103, 176, 209, 0.95);
+  background: #b9a79a
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
@@ -1017,10 +1017,23 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+.marquee{
+  display: flex;
+  justify-content: center;
+}
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials{
+  background-color: #fff8ea;
+}
+.testimonials h2{
+  color: #734f35;
+}
+.testimonials p{
+  color: #b9a79a;
+}
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1047,7 +1060,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #734f35;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1114,10 +1127,20 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #67b0d1;
 }
+.marquee{
+  display: flex;
+  justify-content: center;
+}
 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.team h2{
+  color: #734f35;
+}
+.team p{
+  color: #b9a79a;
+}
 .team .member {
   text-align: center;
   margin-bottom: 80px;
@@ -1201,6 +1224,7 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 80px;
+  background-color: #fff8ea;
 }
 
 .contact .info-box {
