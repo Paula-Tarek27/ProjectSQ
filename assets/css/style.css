@@ -1222,6 +1222,12 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact h2{
+  color: #734f35;
+}
+.contact p{
+  color: #b9a79a;
+}
 .contact {
   padding-bottom: 80px;
   background-color: #fff8ea;
@@ -1234,14 +1240,18 @@ section {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
 }
+.contact .info-box:hover::before{
+  background-color: #b9a79a;
+}
 
 .contact .info-box i {
   font-size: 32px;
-  color: #67b0d1;
+  color: #734f35;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f0f7fa;
 }
+
 
 .contact .info-box h3 {
   font-size: 20px;
