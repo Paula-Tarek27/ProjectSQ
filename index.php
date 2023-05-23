@@ -14,9 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -234,8 +232,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Happy Clients</strong> consequuntur quae</p>
             </div>
           </div>
@@ -243,8 +240,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Projects</strong> adipisci atque cum quia aut</p>
             </div>
           </div>
@@ -252,8 +248,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
             </div>
           </div>
@@ -261,8 +256,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
             </div>
           </div>
@@ -315,8 +309,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/c1.jfif" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/c1.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/c1.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -326,8 +319,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/p1.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/p1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/p1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -337,8 +329,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/c2.jfif" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/c2.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/c2.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -348,8 +339,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/d2.jfif" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/d2.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/d2.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -359,8 +349,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/p3.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/p3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/p3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -370,8 +359,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/c3.jfif" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/c3.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/c3.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -381,8 +369,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/d3.jfif" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/d3.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/d3.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -392,8 +379,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/d4.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/d4.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/d4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -403,8 +389,7 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -531,13 +516,13 @@
             <div class="member" data-aos="fade-up">
               <div class="pic"><img src="assets/img/team/team4.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
+                <h4>Ahmed Desoky</h4>
                 <span>Chief Executive Officer</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/ahmed.dsooky.1"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/el_desookyy/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/ahmed-desoky-50788421a/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -549,7 +534,7 @@
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="pic"><img src="assets/img/team/team5.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
+                <h4>Poula Tarik</h4>
                 <span>CTO</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -586,7 +571,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Badr city , Egypt</p>
             </div>
           </div>
 
@@ -594,7 +579,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <p>Adesoky424@gmail.com</p>
             </div>
           </div>
 
@@ -611,9 +596,7 @@
         <div class="row">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.3252977967263!2d31.72113202469808!3d30.142114374874616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f74d392da177%3A0xe75607bddf15ae1b!2z2KfZhNis2KfZhdi52Kkg2KfZhNmF2LXYsdmK2Kkg2KfZhNix2YjYs9mK2Kk!5e0!3m2!1sar!2seg!4v1684257371697!5m2!1sar!2seg"
-              frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.3252977967263!2d31.72113202469808!3d30.142114374874616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f74d392da177%3A0xe75607bddf15ae1b!2z2KfZhNis2KfZhdi52Kkg2KfZhNmF2LXYsdmK2Kkg2KfZhNix2YjYs9mK2Kk!5e0!3m2!1sar!2seg!4v1684257371697!5m2!1sar!2seg" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-6">
@@ -724,8 +707,7 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
