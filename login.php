@@ -37,17 +37,17 @@ function getInputValue($name)
 <html>
 
 <head>
-    <title>welcome to NETFLIX</title>
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
+    <title>welcome in Padeso cafee</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
     <div class="signIn">
         <div class="column">
             <div class="header">
-                <img src="assets/images/logo.png" alt="Site logo" title="Logo">
+                <img src="assets/img/tea-cup.gif" alt="Site logo" title="Logo">
                 <h3>Sign In</h3>
-                <span>to continue to NETFLIX</span>
+                <span>to continue to Padeso</span>
 
             </div>
 

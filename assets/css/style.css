@@ -492,6 +492,77 @@ h6 {
   }
 }
 
+/* =============================login and rigester============================= */
+.signInContainer {
+  background-color: #efefee;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  background-color: #fff;
+  min-height: 300px;
+  max-height: 100%;
+  width: 450px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+  padding: 20px 35px;
+  overflow-y: auto;
+}
+
+.column form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+  font-size: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #dedede;
+}
+
+.column form input[type="submit"] {
+  background-color: #4285f4;
+  color: #fff;
+  height: 36px;
+  width: 88px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.column .header {
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.column h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  padding-top: 16px;
+  color: #000;
+}
+
+.column .header span {
+  font-size: 16px;
+}
+
+.column .header img {
+  width: 200px;
+  height: 200px;
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -586,7 +657,9 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/ol.jpeg")  fixed center center   /*center center no-repeat*/;
+  background: url("../img/ol.jpeg") fixed center center
+    /*center center no-repeat*/
+  ;
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -748,10 +821,12 @@ section {
 .services .icon-box:hover .icon i {
   color: #fff;
 }
-.services h2{
+
+.services h2 {
   color: #734f35;
 }
-.services p{
+
+.services p {
   color: #b9a79a;
 }
 
@@ -848,10 +923,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio h2{
+.portfolio h2 {
   color: #734f35;
 }
-.portfolio p{
+
+.portfolio p {
   color: #b9a79a;
 }
 
@@ -1017,7 +1093,8 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-.marquee{
+
+.marquee {
   display: flex;
   justify-content: center;
 }
@@ -1025,15 +1102,18 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials{
+.testimonials {
   background-color: #fff8ea;
 }
-.testimonials h2{
+
+.testimonials h2 {
   color: #734f35;
 }
-.testimonials p{
+
+.testimonials p {
   color: #b9a79a;
 }
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1127,7 +1207,8 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #67b0d1;
 }
-.marquee{
+
+.marquee {
   display: flex;
   justify-content: center;
 }
@@ -1135,12 +1216,14 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team h2{
+.team h2 {
   color: #734f35;
 }
-.team p{
+
+.team p {
   color: #b9a79a;
 }
+
 .team .member {
   text-align: center;
   margin-bottom: 80px;
@@ -1222,12 +1305,14 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact h2{
+.contact h2 {
   color: #734f35;
 }
-.contact p{
+
+.contact p {
   color: #b9a79a;
 }
+
 .contact {
   padding-bottom: 80px;
   background-color: #fff8ea;
@@ -1240,7 +1325,8 @@ section {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
 }
-.contact .info-box:hover::before{
+
+.contact .info-box:hover::before {
   background-color: #b9a79a;
 }
 
