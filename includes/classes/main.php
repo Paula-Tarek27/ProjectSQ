@@ -1,6 +1,11 @@
  <?php
-    include_once('includes/header.php')
+    include_once('includes/header.php');
+    include_once('includes/config.php');
 
+    $select = "SELECT * FROM coffeeshop_products";
+    $s = mysqli_query($conn, $select);
+
+    $rows = mysqli_fetch_assoc($s);
     ?>
 
 
@@ -134,9 +139,8 @@
 
              <div class="section-title" data-aos="fade-in" data-aos-delay="100">
                  <h2>Products</h2>
-                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-                     in iste officiis commodi quidem hic quas.</p>
+                 <p>We have menu of coffee & bakery shop varied and offer something for everyone. You want to
+                     have a variety of coffee drinks, as well as a selection of pastries, cakes, and other baked goods </p>
              </div>
 
              <div class="row" data-aos="fade-in">
@@ -151,18 +155,21 @@
              </div>
 
              <div class="row portfolio-container" data-aos="fade-up">
+                 <?php foreach ($s as $data) : ?>
+                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                         <div class="portfolio-wrap">
+                             <img src="<?= $data['coffeeshop_item_images'] ?>" class="img-fluid" alt="nooooo">
 
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/c4.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/c4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1">
-                                 <i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
+                             <div class="portfolio-links">
+                                 <a href="<?= $data['coffeeshop_item_images'] ?>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<?= $data['item_name'] ?>">
+                                     <i class="bx bx-plus"></i></a>
+                                 <a href="portfolio-details.php?show=<?= $data['item_id'] ?>" title="More Details"><i class="bx bx-link"></i></a>
+                             </div>
                          </div>
+                         <h2><?= $data['item_name'] ?></h2>
                      </div>
-                 </div>
-
+                 <?php endforeach; ?>
+                 <!-- 
                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                      <div class="portfolio-wrap">
                          <img src="assets/img/portfolio/c3.jpg" class="img-fluid" alt="">
@@ -251,7 +258,7 @@
                              <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
                          </div>
                      </div>
-                 </div>
+                 </div> -->
 
              </div>
 
@@ -489,3 +496,5 @@
      </section><!-- End Contact Section -->
 
  </main>
+
+ </html>
