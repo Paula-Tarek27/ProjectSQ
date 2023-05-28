@@ -1,5 +1,5 @@
 <?php
-$select = "SELECT * FROM categories";
+$select = "SELECT item_name , category_type FROM categories JOIN coffeeshop_products ON category_id = item_category_id;";
 $s = mysqli_query($conn, $select);
 
 $rows = mysqli_fetch_assoc($s);
@@ -31,9 +31,8 @@ $rows = mysqli_fetch_assoc($s);
                         <?php foreach ($s as $data) : ?>
                             <li>
                                 <h4><?= $data['category_type'] ?></h4>
-                                <a href="#"><?= $data['category_desc'] ?></a>
-                                <a href="#"><?= $data['category_desc'] ?></a>
-                                <a href="#"><?= $data['category_desc'] ?></a>
+                                <a href="#"><?= $data['item_name'] ?></a>
+
                             </li>
                         <?php endforeach; ?>
                         <!-- <li>

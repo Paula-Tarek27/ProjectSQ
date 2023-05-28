@@ -1,9 +1,9 @@
 <?php
 class User {
-    private $con, $sqlData;
+    private $conn, $sqlData;
 
     public function __construct($con, $username) {
-        $this->con = $con;
+        $this->conn = $con;
 
         $query = $con->prepare("SELECT * FROM users WHERE username=:username");
         $query->bindValue(":username", $username);
@@ -33,7 +33,7 @@ class User {
     }
 
     public function setIsSubscribed($value) {
-        $query = $this->con->prepare("UPDATE users SET IsSubscribed=:IsSubscribed
+        $query = $this->conn->prepare("UPDATE users SET IsSubscribed=:IsSubscribed
                                     WHERE username=:un");
         $query->bindValue(":IsSubscribed", $value);
         $query->bindValue(":un", $this->getUsername());

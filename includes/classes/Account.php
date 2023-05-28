@@ -49,13 +49,20 @@ class Account
     {
         $pw = hash("sha512", $pw);
 
-        $query = $this->con->prepare("SELECT * FROM users WHERE userName=:un AND password=:pw");
-        $query->bindValue(":un", $un);
-        $query->bindValue(":pw", $pw);
+        // $query = $this->con->prepare("SELECT * FROM users WHERE userName=':un' AND password=':pw'");
+        // $query->bindValue(':un', $un);
+        // $query->bindValue(':pw', $pw);
+        // $query->execute();
+        $sql = 'SELECT * FROM users WHERE username = ":username" AND password= ":password" ';
+        $stmt = $this->con->prepare($sql);
+        $stmt->bindValue(':username', $un);
+        $stmt->bindValue(':pw', $pw);
+        $stmt->execute();
 
-        $query->execute();
 
-        if ($query->rowCount() == 1) {
+        $user = $stmt->get_result()->fetch_assoc();
+
+        if ($stmt->rowCount() == 1) {
             return true;
         }
 
@@ -100,10 +107,12 @@ class Account
             return;
         }
 
-        $query = $this->con->prepare("SELECT * FROM users WHERE userName=:un");
-        $query->bindValue(":un", $un);
+        $query = $this->con->prepare("SELECT * FROM users WHERE userName= ':un'  ");
+        $query->bindParam(':un', $un);
 
         $query->execute();
+
+        // $user = $query->get_result()->fetch_assoc();
 
         if ($query->rowCount() != 0) {
             array_push($this->errorArray, Constants::$usernameTaken);

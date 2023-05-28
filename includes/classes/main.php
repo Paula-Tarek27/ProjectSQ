@@ -265,9 +265,9 @@
          </div>
      </section>
      <!-- End Portfolio Section -->
-     <marquee>
+     <!-- <marquee>
          <p>🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩</p>
-     </marquee>
+     </marquee> -->
      </div>
 
      <!-- ======= Testimonials Section ======= -->
@@ -360,10 +360,10 @@
 
          </div>
      </section><!-- End Testimonials Section -->
-     <marquee>
+     <!-- <marquee>
          <p>🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩</p>
      </marquee>
-     </div>
+     </div> -->
 
      <!-- ======= Team Section ======= -->
      <section id="team" class="team">
@@ -416,9 +416,9 @@
 
          </div>
      </section><!-- End Team Section -->
-     <marquee>
+     <!-- <marquee>
          <p>🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩</p>
-     </marquee>
+     </marquee> -->
      </div>
 
      <!-- ======= Contact Section ======= -->
