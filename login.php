@@ -5,7 +5,7 @@ require_once("includes/classes/FormSanitizer.php");
 require_once("includes/classes/Account.php");
 require_once("includes/classes/Constants.php");
 
-$account = new Account($conn);
+$account = new Account($con);
 
 if (isset($_POST["submitButton"])) {
 

@@ -1,6 +1,6 @@
 <?php
 include_once('includes/header.php');
-include_once('includes/config.php');
+include_once('includes/connection.php');
 
 
 $id = $_GET['show'];
@@ -9,7 +9,9 @@ $s = mysqli_query($conn, $select);
 
 $rows = mysqli_fetch_assoc($s);
 
-
+$select2 = "SELECT * FROM categories ";
+$a = mysqli_query($conn, $select2);
+$rows1 = mysqli_fetch_assoc($a);
 
 ?>
 
@@ -42,36 +44,12 @@ $rows = mysqli_fetch_assoc($s);
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Squadfree
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
 
   <main id="main">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Product Details</h2>
-          <ol>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="portfolio.php">Product</a></li>
-            <li>Product Details</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- Breadcrumbs Section -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
@@ -89,25 +67,6 @@ $rows = mysqli_fetch_assoc($s);
                 </div>
                 <h2><?= $rows['item_name'] ?></h2>
               </div>
-
-
-              <!-- <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div> -->
             </div>
           </div>
 
@@ -116,18 +75,12 @@ $rows = mysqli_fetch_assoc($s);
               <h3><?= $rows['item_desc'] ?></h3>
               <ul>
                 <li><strong><?= $rows['item_name'] ?></strong> : <?= $rows['item_price'] ?> </li>
-                <!-- <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of Product detail</h2>
+              <h2><?= $rows1['category_type'] ?></h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
-                accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
-                eius.
+                <?= $rows1['category_desc'] ?>
               </p>
             </div>
           </div>

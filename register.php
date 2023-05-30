@@ -3,7 +3,7 @@ require_once("includes/config.php");
 require_once("includes/classes/FormSanitizer.php");
 require_once("includes/classes/Constants.php");
 require_once("includes/classes/Account.php");
-$account = new Account($conn);
+$account = new Account($con);
 
 if (isset($_POST["submitButton"])) {
 

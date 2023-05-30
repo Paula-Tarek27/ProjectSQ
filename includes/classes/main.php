@@ -1,8 +1,9 @@
  <?php
     include_once('includes/header.php');
-    include_once('includes/config.php');
+    include_once('includes/connection.php');
 
     $select = "SELECT * FROM coffeeshop_products";
+    $select = "SELECT * FROM Categories";
     $s = mysqli_query($conn, $select);
 
     $rows = mysqli_fetch_assoc($s);
@@ -12,7 +13,7 @@
  <!-- ======= Hero Section ======= -->
  <section id="hero">
      <div class="hero-container" data-aos="fade-up">
-         <h1>Welcome to Padeso</h1>
+         <h1>Welcome to ARABICA</h1>
          <h2>Start your day with Smile😀</h2>
          <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
      </div>
@@ -27,10 +28,11 @@
              <div class="row no-gutters">
                  <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
                      <div class="content">
-                         <h3>Voluptatem dignissimos provident quasi</h3>
+                         <h3>Why We Use Arabica Beans In Our Coffee </h3>
                          <p>
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                             dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                             Arabica coffee is a type of coffee that is grown in high altitudes and
+                             is known for its smooth, sweet flavor. It is the most popular type of coffee in the world,
+                             accounting for about 60% of global production.
                          </p>
                          <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
                      </div>
@@ -39,24 +41,20 @@
                      <div class="icon-boxes d-flex flex-column justify-content-center">
                          <div class="row">
                              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                                 <i class="bx bx-receipt"></i>
-                                 <h4>Corporis voluptates sit</h4>
-                                 <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                 <i class='bx bxs-coffee-bean bx-spin bx-rotate-180'></i>
+                                 <h4>ARABICA </h4>
+                                 <p>Arabica coffee is a high-quality coffee that is grown in high altitudes and is known for its smooth, sweet flavor</p>
                              </div>
                              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                                 <i class="bx bx-cube-alt"></i>
-                                 <h4>Ullamco laboris nisi</h4>
-                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                 <i class="fas fa-solid fa-bread-slice fa-spin"></i>
+
+                                 <h4>The Taste of Paris</h4>
+                                 <p>Croissant is a buttery, flaky pastry that is popular in France and other parts of Europe</p>
                              </div>
                              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                                 <i class="bx bx-images"></i>
-                                 <h4>Labore consequatur</h4>
-                                 <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                             </div>
-                             <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                                 <i class="bx bx-shield"></i>
-                                 <h4>Beatae veritatis</h4>
-                                 <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                                 <i class='bx bxs-cookie bx-spin'></i>
+                                 <h4>The Sweet Spot</h4>
+                                 <p>Donuts are a delicious and versatile pastry that can be enjoyed for breakfast, lunch, or dinner.</p>
                              </div>
                          </div>
                      </div><!-- End .content-->
@@ -71,44 +69,24 @@
          <div class="container">
 
              <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                 <h2>Services</h2>
+                 <h1>Categories</h1>
                  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                      consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
                      in iste officiis commodi quidem hic quas.</p>
              </div>
 
              <div class="row">
-                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box" data-aos="fade-up">
-                         <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                         <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                         <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                 <?php foreach ($s as $data) : ?>
+                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                         <div class="icon-box" data-aos="fade-up">
+                             <h2 class="title"><?= $data['category_type'] ?></h2>
+                             <p class="description"><?= $data['category_desc'] ?></p>
+                             <a href="Baked.php?des=<?= $data['category_id'] ?>">Show</a>
+                         </div>
                      </div>
-                 </div>
+                 <?php endforeach; ?>
 
-                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                         <div class="icon"><i class="bx bx-file"></i></div>
-                         <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                         <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                     </div>
-                 </div>
 
-                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                         <div class="icon"><i class="bx bx-tachometer"></i></div>
-                         <h4 class="title"><a href="">Magni Dolores</a></h4>
-                         <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                     </div>
-                 </div>
-
-                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                         <div class="icon"><i class="bx bx-world"></i></div>
-                         <h4 class="title"><a href="">Nemo Enim</a></h4>
-                         <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                     </div>
-                 </div>
 
              </div>
 
@@ -118,167 +96,25 @@
 
      <!-- ======= Cta Section ======= -->
      <section id="cta" class="cta">
-         <div class="container" data-aos="zoom-in">
+         <div class="container">
 
              <div class="text-center">
-                 <h3>Call To Action</h3>
-                 <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                     laborum.</p>
-                 <a class="cta-btn" href="#">Call To Action</a>
+                 <h1>We Have a Mobile application </h1>
+                 <i class="fas fa-solid fa-mobile-screen-button"></i>
+                 <a class="cta-btn" href="#">Download Our App</a>
              </div>
 
          </div>
      </section><!-- End Cta Section -->
-
-     <!-- ======= Portfolio Section ======= -->
-
-
-     <section id="portfolio" class="portfolio">
-         <div class="container">
-
-             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                 <h2>Products</h2>
-                 <p>We have menu of coffee & bakery shop varied and offer something for everyone. You want to
-                     have a variety of coffee drinks, as well as a selection of pastries, cakes, and other baked goods </p>
-             </div>
-
-             <div class="row" data-aos="fade-in">
-                 <div class="col-lg-12 d-flex justify-content-center">
-                     <ul id="portfolio-flters">
-                         <li data-filter="*" class="filter-active">All</li>
-                         <li data-filter=".filter-app">Coffee☕</li>
-                         <li data-filter=".filter-card">Baked&Donuts🍩</li>
-                         <li data-filter=".filter-web">Coffee Beans</li>
-                     </ul>
-                 </div>
-             </div>
-
-             <div class="row portfolio-container" data-aos="fade-up">
-                 <?php foreach ($s as $data) : ?>
-                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                         <div class="portfolio-wrap">
-                             <img src="<?= $data['coffeeshop_item_images'] ?>" class="img-fluid" alt="nooooo">
-
-                             <div class="portfolio-links">
-                                 <a href="<?= $data['coffeeshop_item_images'] ?>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<?= $data['item_name'] ?>">
-                                     <i class="bx bx-plus"></i></a>
-                                 <a href="portfolio-details.php?show=<?= $data['item_id'] ?>" title="More Details"><i class="bx bx-link"></i></a>
-                             </div>
-                         </div>
-                         <h2><?= $data['item_name'] ?></h2>
-                     </div>
-                 <?php endforeach; ?>
-                 <!-- 
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/c3.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/c3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/c6.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/c6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/d5.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/d5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/d1.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/d1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/p2.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/p2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/p5.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/p5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/p8.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/p8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/p8.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/p8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                     <div class="portfolio-wrap">
-                         <img src="assets/img/portfolio/p10.jpg" class="img-fluid" alt="">
-                         <div class="portfolio-links">
-                             <a href="assets/img/portfolio/p10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                             <a href="portfolio-details.php" title="More Details"><i class="bx bx-link"></i></a>
-                         </div>
-                     </div>
-                 </div> -->
-
-             </div>
-
-         </div>
-     </section>
-     <!-- End Portfolio Section -->
-     <!-- <marquee>
-         <p>🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩</p>
-     </marquee> -->
-     </div>
 
      <!-- ======= Testimonials Section ======= -->
      <section id="testimonials" class="testimonials section-bg">
          <div class="container">
 
              <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                 <h2>Testimonials</h2>
-                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-                     in iste officiis commodi quidem hic quas.</p>
+                 <h2>Reviews</h2>
+                 <h5>Our coffee shop is a cozy and inviting place to enjoy a cup of coffee and a pastry.
+                     We offer a variety of coffee drinks, as well as a selection of pastries and other snacks.</h5>
              </div>
 
              <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -288,12 +124,11 @@
                          <div class="testimonial-item">
                              <p>
                                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                 Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                                 quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                 "Great coffee and friendly service. I'll definitely be back!"
                                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                              </p>
-                             <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                             <h3>Saul Goodman</h3>
+                             <img src="assets/img/testimonials/1.JPEG" class="testimonial-img" alt="">
+                             <h3>Ahmed Desoky</h3>
                              <h4>Ceo &amp; Founder</h4>
                          </div>
                      </div><!-- End testimonial item -->
@@ -302,12 +137,11 @@
                          <div class="testimonial-item">
                              <p>
                                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                 Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                                 quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                 "Love the atmosphere and the food is delicious. A great place to relax and catch up with friends."
                                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                              </p>
-                             <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                             <h3>Sara Wilsson</h3>
+                             <img src="assets/img/testimonials/4.jpg" class="testimonial-img" alt="">
+                             <h3>Mazen Alaa</h3>
                              <h4>Designer</h4>
                          </div>
                      </div><!-- End testimonial item -->
@@ -316,12 +150,11 @@
                          <div class="testimonial-item">
                              <p>
                                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                 Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                                 tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                 The staff is always so welcoming and the coffee is always fresh and delicious."
                                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                              </p>
-                             <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                             <h3>Jena Karlis</h3>
+                             <img src="assets/img/testimonials/2.JPEG" class="testimonial-img" alt="">
+                             <h3>Poula Tarik</h3>
                              <h4>Store Owner</h4>
                          </div>
                      </div><!-- End testimonial item -->
@@ -330,12 +163,12 @@
                          <div class="testimonial-item">
                              <p>
                                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                                 minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                 This is my go-to spot for a quick cup of coffee or a leisurely brunch.
+                                 The food is always great and the service is top-notch.
                                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                              </p>
-                             <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                             <h3>Matt Brandon</h3>
+                             <img src="assets/img/testimonials/6.jpg" class="testimonial-img" alt="">
+                             <h3>Ahmed Ayman </h3>
                              <h4>Freelancer</h4>
                          </div>
                      </div><!-- End testimonial item -->
@@ -344,26 +177,21 @@
                          <div class="testimonial-item">
                              <p>
                                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                 Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                                 labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                                 "This coffee shop is a hidden gem! The coffee is amazing and the staff is so friendly.
+                                 I highly recommend it to anyone looking for a great cup of coffee and a relaxing atmosphere."
                                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                              </p>
-                             <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                             <h3>John Larson</h3>
+                             <img src="assets/img/testimonials/3.jpg" class="testimonial-img" alt="">
+                             <h3>Maged Ali</h3>
                              <h4>Entrepreneur</h4>
                          </div>
                      </div><!-- End testimonial item -->
-
                  </div>
                  <div class="swiper-pagination"></div>
              </div>
 
          </div>
      </section><!-- End Testimonials Section -->
-     <!-- <marquee>
-         <p>🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩</p>
-     </marquee>
-     </div> -->
 
      <!-- ======= Team Section ======= -->
      <section id="team" class="team">
