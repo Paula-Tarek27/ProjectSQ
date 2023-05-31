@@ -17,7 +17,7 @@ $rows = mysqli_fetch_assoc($s);
     <div class="container">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-            <h2>Products</h2>
+            <h1>Products</h1>
             <p>We have menu of coffee & bakery shop varied and offer something for everyone. You want to
                 have a variety of coffee drinks, as well as a selection of pastries, cakes, and other baked goods </p>
         </div>

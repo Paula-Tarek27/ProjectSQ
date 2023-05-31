@@ -827,7 +827,7 @@ section {
 }
 
 .services h1 {
-  color: #000000;
+  color: #fff;
   font-weight: bold;
   font-size: 55px;
 }
@@ -947,14 +947,22 @@ section {
   margin-top: 60px;
 }
 
-.portfolio h2 {
-  color: #000000;
+.portfolio h1 {
+  color: #000;
   font-weight: bold;
+  font-weight: 55px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  color: #fff;
+  font-weight: bold;
+  font-weight: 55px;
   text-align: center;
 }
 
 .portfolio p {
-  color: #b9a79a;
+  color: #fff;
 }
 
 .portfolio .portfolio-item {
@@ -1142,6 +1150,12 @@ section {
 }
 
 .testimonials h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.testimonials h3 {
   color: #000;
   font-weight: bold;
   font-size: 55px;
@@ -1258,7 +1272,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team h2 {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   font-size: 55px;
 }
