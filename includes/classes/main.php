@@ -173,7 +173,7 @@
                          </div>
                      </div><!-- End testimonial item -->
 
-                     <div class="swiper-slide"> 
+                     <div class="swiper-slide">
                          <div class="testimonial-item">
                              <p>
                                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -224,7 +224,7 @@
 
 
 
-                 <div class="col-lg-4 col-md-6">
+                 <!-- <div class="col-lg-4 col-md-6">
                      <div class="member" data-aos="fade-up" data-aos-delay="300">
                          <div class="pic"><img src="assets/img/team/team5.jpeg" class="img-fluid" alt=""></div>
                          <div class="member-info">
@@ -238,13 +238,13 @@
                              </div>
                          </div>
                      </div>
-                 </div>
+                 </div> -->
 
              </div>
 
          </div>
      </section><!-- End Team Section -->
-    
+
      </div>
 
      <!-- ======= Contact Section ======= -->
