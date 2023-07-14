@@ -173,7 +173,7 @@
                          </div>
                      </div><!-- End testimonial item -->
 
-                     <div class="swiper-slide">
+                     <div class="swiper-slide"> 
                          <div class="testimonial-item">
                              <p>
                                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -244,9 +244,7 @@
 
          </div>
      </section><!-- End Team Section -->
-     <!-- <marquee>
-         <p>🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩</p>
-     </marquee> -->
+    
      </div>
 
      <!-- ======= Contact Section ======= -->

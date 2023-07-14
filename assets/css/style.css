@@ -1073,8 +1073,13 @@ section {
   padding-top: 40px;
 }
 
+.portfolio-details img {
+  border-radius: 50px;
+}
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1141,6 +1146,7 @@ section {
   justify-content: center;
 }
 
+/*************************/
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
