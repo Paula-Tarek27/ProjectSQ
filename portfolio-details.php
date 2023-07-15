@@ -74,7 +74,7 @@ $rows1 = mysqli_fetch_assoc($a);
             <div class="portfolio-info">
               <h3><?= $rows['item_desc'] ?></h3>
               <ul>
-                <li><strong><?= $rows['item_name'] ?></strong> : <?= $rows['item_price'] ?> <a href="AddToCart.php"><button>ADD To Cart</button></a></li>
+                <li><strong><?= $rows['item_name'] ?></strong> : <?= $rows['item_price'] ?> <a href="AddToCart.php"><button>ADD To Cart Button</button></a></li>
               </ul>
             </div>
             <div class="portfolio-description">
